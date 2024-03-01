@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Kullanıcı Girişi Ekranı</title>
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="form signup">
+            <header>Kayıt Ol</header>
+            <form action="#">
+                <input type="text" placeholder="Ad" required />
+                <input type="text" placeholder="E-Posta Adresi" required />
+                <input type="password" placeholder="Şifre" required />
+                <div class="checkbox">
+                    <input type="checkbox" id="signupCheck" />
+                    <label for="signupCheck">Sözleşmeyi okudum. Kabul ediyorum </label>
+                </div>
+                <input type="submit" value="Kaydol" />
+            </form>
+        </div>
+
+        <div class="form login">
+            <header>Kullanıcı Girişi</header>
+            <form action="#">
+                <input type="text" placeholder="E-Posta Adresi" required />
+                <input type="password" placeholder="Şifre" required />
+                <a href="#">Şifrenizi mi unuttunuz?</a>
+                <input type="submit" value="Giriş" />
+            </form>
+        </div>
+        
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
