@@ -37,13 +37,13 @@
     </style>
     
     <div class="d">
-        <p id="p">60</p>
+        <p id="p">0</p>
     </div>
     <br><br>
     <button onclick="baslat()">Süreyi Başlat</button>
     
     <script>
-        var kalansure = 60;
+        var kalansure = 1;
         var element = document.getElementById("p");
 
         function baslat(){
@@ -51,11 +51,11 @@
         }
 
         function countdown(){
-            if(kalansure == -1){
+            if(kalansure == 60){
                 clearTimeout(TimerId)
             } else {
                 element.innerHTML = kalansure;
-                kalansure--;
+                kalansure++;
             }
         }
     </script>
